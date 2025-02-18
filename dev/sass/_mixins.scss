@@ -1,0 +1,11 @@
+@mixin text-set($family, $size, $weight, $color, $bg-color, $style, $letter-spacing, $text-align, $decoration) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    background-color: $bg-color;
+    font-style: $style;
+    letter-spacing: $letter-spacing;
+    text-align: $text-align;
+    text-decoration: $decoration;
+}

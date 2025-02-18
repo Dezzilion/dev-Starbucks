@@ -1,0 +1,31 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+
+footer{
+    height: 100px;
+    background: v.$footer-color;
+    margin-top: auto;
+    .footer__row {
+        display: flex;
+        justify-content: space-around;
+        &__logo {
+            @include m.text-set(v.$font-logo, 37px, 800, v.$logo-color, alpha, normal, 0, left, none);
+            background-image: v.$logo-gradient;
+            color: transparent;
+            background-clip: text;
+        }
+        &__list {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                li {
+
+                }
+            }
+        }
+    }
+}
+
+ 
