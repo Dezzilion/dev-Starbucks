@@ -1,8 +1,24 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+@use "mixins" as m;
+@use "variables" as v;
+
+header{	
+	padding: 48px 0!important;
+	.container {
+		display: flex;
+		align-items: center;
+		gap: 94px;
+		.mobile-container {
+			nav {
+				ul {
+					display: flex;
+					gap: 94px;
+					li {
+						a {
+							@include m.text-set(v.$font-primary, 20px, 400, #D9D9D9, alpha, normal, 0, left, none);
+						}
+					}
+				}
+			}
+		}
 	}
 }
