@@ -1,4 +1,28 @@
 @media screen and (max-width: 1024px) {
+    header {
+        position: relative;
+        .mobile-container {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 98px;
+            width: 100%;
+            padding: 25px 25px 75px;
+            background-color: rgba(18, 21, 23, 0.3);
+            background-image:  linear-gradient(245deg, rgba(35, 114, 73, 0.6) 0%, rgba(53, 198, 107, 0.6) 100%);
+            transform: translate(0, -100%);
+            transition: 2.3s;
+            visibility: hidden;
+            &.show {
+                display: block;
+                transform: translate(0, 0);
+                visibility: visible;
+            }
+            ul {
+                flex-direction: column;   
+            }
+        }
+    }
 }
 
 
