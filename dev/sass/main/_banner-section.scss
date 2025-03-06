@@ -60,6 +60,18 @@
     &__img {
         position: relative;
         &::before {
+            content: var(--percent);
+            position: absolute;
+            background-image: url("./assets/img/discount-circle.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            @include m.text-set(v.$font-primary, 55px, 500, v.$title-color, alpha, normal, 0, center, none);
+            width: v.$banner-discount-size;
+            height: v.$banner-discount-size;
+            top: 0;
+            left: 260px;
+        }
+        &::after {
             content: "";
             position: absolute;
             overflow: hidden;
@@ -69,18 +81,6 @@
             height: 676px;
             background-image: url("./assets/img/banner-line.svg");
             z-index: -5;
-        }
-        &::after {
-            content: "45%";
-            position: absolute;
-            background-image: url("./assets/img/discount-circle.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            @include m.text-set(v.$font-primary, 55px, 500, v.$title-color, alpha, normal, 0, center, none);
-            width: 183px;
-            height: 183px;
-            top: 0;
-            left: 260px;
         }
     }
 }

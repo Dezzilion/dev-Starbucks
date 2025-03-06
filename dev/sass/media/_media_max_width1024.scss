@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1024px) {
     header {
         position: relative;
@@ -20,6 +21,26 @@
             }
             ul {
                 flex-direction: column;   
+            }
+        }
+    }
+    .banner {
+        .container {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__title {
+            font-size: 48px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+        &__img {
+            width: 271px;
+            height: 381px;
+            &::after {
+                width: 400px;
+                height: 292px;
             }
         }
     }

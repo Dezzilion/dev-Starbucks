@@ -1,0 +1,18 @@
+@use "./sass/variables" as v;
+@use "./sass/mixins" as m;
+@media screen and (max-width: 1299px) {
+    .banner {
+        &__img {
+            width: 375.2px;
+            height: 503.2px;
+
+            &::before {
+                width: 146.4px;
+                height: 146.4px;
+            }
+        }
+    }
+}
+
+
+
