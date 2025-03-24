@@ -9,7 +9,16 @@
         justify-content: space-between;
     }
     &__title {
+        position: relative;
         @include m.text-set(v.$font-primary, 80px, 800, v.$title-color, alpha, normal, -2%, left, none);
+        &::before {
+            @include m.light-set;
+            background: url('./assets/img/banner-title-light.png') center no-repeat;
+            top: -70px;
+            left: -117px;
+            width: 600px;
+            height: 600px;
+        }
         span {
             background-image: v.$primary-gradient;
             color: transparent;

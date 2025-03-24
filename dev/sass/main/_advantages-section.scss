@@ -1,6 +1,10 @@
 @use "./sass/variables" as v;
 @use "./sass/mixins" as m;
 .advantages {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
     &__row {
         display: flex;
         justify-content: space-around;
@@ -22,6 +26,7 @@
     }
     &__title {
         @include m.text-set(v.$font-primary, 32px, 500, v.$bg-color, alpha, normal, 0, center, none);
+        padding: 5px 0;
     }
     &__subtitle {
         @include m.text-set(v.$font-primary, 20px, 400, v.$bg-color, alpha, normal, 0, center, none);

@@ -30,17 +30,17 @@
             align-items: center;
         }
         &__title {
-            font-size: 48px;
+            font-size: 48px!important;
         }
         &__subtitle {
-            font-size: 12px;
+            font-size: 12px!important;
         }
         &__img {
-            width: 271px;
-            height: 381px;
+            width: 271px!important;
+            height: 381px!important;
             &::after {
-                width: 400px;
-                height: 292px;
+                width: 400px!important;
+                height: 292px!important;
             }
         }
     }

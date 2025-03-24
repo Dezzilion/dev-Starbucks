@@ -9,3 +9,11 @@
     text-align: $text-align;
     text-decoration: $decoration;
 }
+@mixin light-set {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    background: center/contain no-repeat;
+}
