@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#35C66B">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>StarBucks</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/reset.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="overlay" data-modal-close></div>
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="header-logo">
+            <img src="./assets/img/logo.svg"  alt="logo">
+        </a>
+            <div id="mobile-container" class="mobile-container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Select</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn btn-secondary" id="feedback" data-triger-modal="feedback">Feedback</a>
+            </div>
+            <button id="btn-burger" class="btn btn-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main class="wrapper home">
+        <section class="banner">
+            <div class="container">
+                <div class="banner__content">
+                    <h1 class="template-title">New Cafe by <span class="gradient-text">StarBucks</span></h1>
+                    <h6 class="template-description">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!</h6>
+                    <div class="banner-btn-group">
+                        <a href="#" class="btn btn-primary">Select a coffee</a>
+                        <a href="#" class="btn btn-secondary">More</a>
+                    </div>
+                    <ul class="banner-statistics">
+                        <li class="banner-statistic__item">
+                            <div class="banner-statistic__title">9k<span class="gradient-text">+</span></div>
+                            <div class="banner-statistic__subtitle">Premium Users</div>
+                        </li>
+                        <li class="banner-statistic__item">
+                            <div class="banner-statistic__title">2k<span class="gradient-text">+</span></div>
+                            <div class="banner-statistic__subtitle">Happy Customer</div>
+                        </li>
+                        <li class="banner-statistic__item">
+                            <div class="banner-statistic__title">28<span class="gradient-text">+</span></div>
+                            <div class="banner-statistic__subtitle">Awards Winning</div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="banner-img">
+                    <div class="accent-label">
+                        <div class="accent-label-image"></div>
+                        <div class="accent-label-shadow"></div>
+                        <span>
+                    45%
+                </span>
+                    </div>
+                    <img src="./assets/img/first-screen__cup.png" alt="cup">
+                    <svg class="banner-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1472 670" fill="none">
+                        <path d="M1 617L139.579 531.327C177.975 507.589 196.674 461.793 185.865 417.965L178.606 388.53C166.875 340.962 189.935 291.657 233.963 270.167L250.481 262.104C272.455 251.379 289.948 233.254 299.886 210.913L313.814 179.602C333.295 135.809 380.182 111.002 427.347 119.532L564.697 144.375C606.802 151.99 649.274 133.041 671.731 96.6203L696.658 56.1946C717.648 22.1533 756.405 2.87368 795.941 8.9012C1052.15 47.9618 1233.24 142.147 1471.5 55.5" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                        <path d="M25 643L163.579 557.327C201.975 533.589 220.674 487.793 209.865 443.965L202.606 414.53C190.875 366.962 213.935 317.657 257.963 296.167L274.481 288.104C296.455 277.379 313.948 259.254 323.886 236.913L337.814 205.602C357.295 161.809 404.182 137.002 451.347 145.532L582.592 169.27C627.673 177.424 672.781 155.118 693.666 114.342L707.823 86.7035C728.474 46.3847 772.916 23.8419 817.261 33.0937C1053.41 82.3625 1202.22 154.771 1471.5 75.5" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                        <path d="M49 669L187.579 583.327C225.975 559.589 244.674 513.793 233.865 469.965L226.606 440.53C214.875 392.962 237.935 343.657 281.963 322.167L298.481 314.104C320.455 303.379 337.948 285.254 347.886 262.913L361.814 231.602C381.295 187.809 428.182 163.002 475.347 171.532L606.592 195.27C651.673 203.424 696.781 181.118 717.666 140.342L727.292 121.548C750.045 77.1271 801.171 55.2998 849.195 68.8863C1072.18 131.972 1220.63 158.547 1470 103" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages-row white-wrapper">
+                    <div class="accent-label-sm">
+                        <div class="accent-label-image"></div>
+                        <div class="accent-label-shadow"></div>
+                        <span>
+                    we have
+                </span>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__img-box">
+                            <img src="./assets/img/advantage-1.png" alt="advantage">
+                        </div>
+                        <h3 class="advantage__title">Tasty</h3>
+                        <h6 class="advantage__description">We have the most delicious coffee</h6>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__img-box">
+                            <img src="./assets/img/advantage-2.png" alt="advantage">
+                        </div>
+                        <h3 class="advantage__title">Fast</h3>
+                        <h6 class="advantage__description">Our cafe will serve you quickly</h6>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__img-box">
+                            <img src="./assets/img/advantage-3.png" alt="advantage">
+                        </div>
+                        <h3 class="advantage__title">Available</h3>
+                        <h6 class="advantage__description">Cafe will serveat the most pleasant prices</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="we-make">
+            <div class="container">
+                <div class="we-make__img-box-bg">
+                    <div class="we-make__img-box">
+                        <div class="we-make__img-box-light"></div>
+                        <div class="accent-label-sm">
+                            <div class="accent-label-image"></div>
+                            <div class="accent-label-shadow"></div>
+                            <span>
+                        we have
+                    </span>
+                        </div>
+                        <img src="./assets/img/we-make.png" alt="we-make">
+                    </div>
+                </div>
+
+
+                <div class="we-make__content-box">
+                    <h2 class="template-title">We make <span class="gradient-text">delicious</span></h2>
+                    <h6 class="template-description">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</h6>
+                    <div class="we-make__process">
+                        <a href="#" id="process" data-triger-modal="process" class="btn btn-primary">
+                        <svg>
+                            <use href="#icon-triangle"></use>
+                        </svg>
+                        Cooking Process
+                    </a>
+                        <img src="./assets/img/we-make__cooking.png" alt="we-make__cooking">
+                    </div>
+                </div>
+
+
+
+                <svg class="we-make__line" viewBox="0 0 1227 999" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1208.47 586.034L1027.12 560.828C978.488 554.068 941.208 514.215 937.705 465.239L936.61 449.929C932.85 397.372 890.379 355.932 837.746 353.463L809.009 352.116C784.66 350.974 761.486 341.316 743.533 324.828L709.96 293.995C677.023 263.746 628.437 257.939 589.3 279.573L420.25 373.019C383.106 393.551 337.212 389.452 304.293 362.664L265.984 331.489C232.679 304.386 186.14 300.538 148.836 321.804L62.1984 371.192" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M1191.19 620.036L1009.85 594.83C961.214 588.07 923.934 548.217 920.431 499.241L919.336 483.931C915.577 431.374 873.106 389.934 820.473 387.465L791.735 386.118C767.386 384.976 744.212 375.318 726.259 358.83L692.686 327.997C659.75 297.748 611.164 291.941 572.026 313.575L402.976 407.021C365.832 427.553 319.938 423.455 287.02 396.666L248.711 365.491C215.405 338.388 168.867 334.54 131.562 355.806L44.9247 405.194" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M1173.92 654.038L992.575 628.832C943.941 622.072 906.661 582.219 903.157 533.243L902.062 517.933C898.303 465.376 855.832 423.936 803.199 421.468L774.461 420.12C750.113 418.978 726.939 409.32 708.986 392.832L675.412 361.999C642.476 331.75 593.89 325.943 554.752 347.577L385.702 441.023C348.558 461.555 302.664 457.457 269.746 430.668L231.437 399.493C198.131 372.39 151.593 368.542 114.288 389.808L27.651 439.196" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>
+                <svg class="we-make__line-mobile" viewBox="0 0 552 449" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.0296 263.452L89.5533 252.121C111.417 249.082 128.176 231.166 129.751 209.149L130.243 202.266C131.933 178.639 151.026 160.009 174.687 158.9L187.606 158.294C198.552 157.781 208.97 153.439 217.041 146.027L232.134 132.166C246.941 118.567 268.782 115.957 286.377 125.682L362.373 167.691C379.072 176.921 399.703 175.079 414.502 163.036L431.724 149.021C446.696 136.837 467.618 135.107 484.388 144.667L523.336 166.87" stroke="#D9D9D9" stroke-width="0.629372" stroke-linejoin="round" />
+                    <path d="M15.7949 278.738L97.3186 267.406C119.182 264.367 135.941 246.451 137.516 224.434L138.008 217.552C139.699 193.925 158.791 175.295 182.453 174.185L195.372 173.58C206.318 173.066 216.736 168.724 224.806 161.312L239.899 147.451C254.706 133.853 276.548 131.242 294.142 140.968L370.139 182.976C386.837 192.207 407.468 190.364 422.267 178.322L439.489 164.307C454.461 152.123 475.383 150.393 492.153 159.953L531.101 182.155" stroke="#D9D9D9" stroke-width="0.629372" stroke-linejoin="round" />
+                    <path d="M23.5604 294.024L105.084 282.692C126.947 279.653 143.707 261.737 145.282 239.72L145.774 232.837C147.464 209.21 166.557 190.581 190.218 189.471L203.137 188.865C214.083 188.352 224.501 184.01 232.572 176.598L247.665 162.737C262.471 149.139 284.313 146.528 301.907 156.254L377.904 198.262C394.602 207.492 415.234 205.65 430.033 193.607L447.254 179.593C462.227 167.408 483.148 165.679 499.919 175.239L538.866 197.441" stroke="#D9D9D9" stroke-width="0.629372" stroke-linejoin="round" />
+                </svg>
+
+
+
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products-title-wrapper">
+                    <h2 class="template-title">New Our <span class="gradient-text">Products</span></h2>
+                    <h6 class="template-description">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!  Starbucks coffee and don't forget about the discount!</h6>
+                    <div class="products-decoration-accent"></div>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <!-- Slider main container -->
+                <div class="swiper swiper-product">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Latte</h3>
+                                <h6 class="product-description">Lattes are for people who enjoy a smooth, milky coffee</h6>
+                                <div class="product-value">
+                                    <div class="product-price">6,00$</div>
+                                    <div class="product-volume">330 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-2.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Mochaccino</h3>
+                                <h6 class="product-description">Hybrid between a mocha and a cappuccino</h6>
+                                <div class="product-value">
+                                    <div class="product-price">7,15$</div>
+                                    <div class="product-volume">250 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-3.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Flat White</h3>
+                                <h6 class="product-description">For people who like a standard white coffee. Super!</h6>
+                                <div class="product-value">
+                                    <div class="product-price">5,70$</div>
+                                    <div class="product-volume">300 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-4.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Cappuccino</h3>
+                                <h6 class="product-description">Equal parts espresso, steamed milk, and milk foam</h6>
+                                <div class="product-value">
+                                    <div class="product-price">6,00$</div>
+                                    <div class="product-volume">200 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Long Black</h3>
+                                <h6 class="product-description">Double shot of espresso poured over boiling water</h6>
+                                <div class="product-value">
+                                    <div class="product-price">7,10$</div>
+                                    <div class="product-volume">360 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-2.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Short Black</h3>
+                                <h6 class="product-description">Single shot of espresso with a cup of hot water</h6>
+                                <div class="product-value">
+                                    <div class="product-price">5,50$</div>
+                                    <div class="product-volume">200 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-3.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Macchiato</h3>
+                                <h6 class="product-description">Single shot of espresso with a dollop of foam</h6>
+                                <div class="product-value">
+                                    <div class="product-price">4,00$</div>
+                                    <div class="product-volume">250 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-4.png" alt="product">
+                                </div>
+                                <h3 class="product-title">Chai Latte</h3>
+                                <h6 class="product-description">Chai syrup is combined with steamed milk</h6>
+                                <div class="product-value">
+                                    <div class="product-price">4,45$</div>
+                                    <div class="product-volume">330 ml</div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Buy Product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-button-prev btn btn-outline">
+                        <svg>
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next btn btn-outline">
+                        <svg>
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="container">
+                <div class="events-title-wrapper">
+                    <h2 class="template-title">Our New <span class="gradient-text">Events</span></h2>
+                    <h6 class="template-description">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</h6>
+                    <p class="events-decoration-accent"></p>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <div class="swiper swiper-events">
+                        <div class="swiper-wrapper events-grid">
+                            <div class="swiper-slide event-area-1">
+                                <div class="event-item" style="background-image: url(./assets/img/events-1.png);">
+                                    <h3 class="event-title">TWO COFFEE FOR 1 PRICE</h3>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-area-2">
+                                <div class="event-item" style="background-image: url(./assets/img/events-2.png);">
+                                    <h3 class="event-title">KITCHEN TOUR</h3>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-area-3">
+                                <div class="event-item" style="background-image: url(./assets/img/events-3.png);">
+                                    <h3 class="event-title">FREE COFFEE FOR 3 COFFEE</h3>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-area-4">
+                                <div class="event-item" style="background-image: url(./assets/img/events-4.png);">
+                                    <h3 class="event-title">OUR INSTAGRAM</h3>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-area-5">
+                                <div class="event-item" style="background-image: url(./assets/img/events-5.png);">
+                                    <h3 class="event-title">WHERE ARE YOU CHOOSE US?</h3>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-navigation">
+                            <div class="swiper-events-button-prev btn btn-outline">
+                                <svg>
+                                    <use href="#icon-arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-events-button-next btn btn-outline">
+                                <svg>
+                                    <use href="#icon-arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--
+        <div class="swiper swiper-events">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">11111111</div>
+                <div class="swiper-slide">22222222</div>
+                <div class="swiper-slide">33333333</div>
+            </div>
+
+            <div class="swiper-navigation">
+                <div class="swiper-events-button-prev btn btn-outline">
+                    <svg>
+                        <use href="#icon-arrow"></use>
+                    </svg>
+                </div>
+                <div class="swiper-events-button-next btn btn-outline">
+                    <svg>
+                        <use href="#icon-arrow"></use>
+                    </svg>
+                </div>
+            </div>
+
+        </div>-->
+
+
+
+
+
+
+                <svg class="events-line" viewBox="0 0 735 318" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M60.7568 29.4986L159.37 14.645C201.831 8.24927 243.857 28.6071 265.16 65.8903L289.663 108.775C310.718 145.625 352.053 165.984 394.1 160.215L585.465 133.957C629.769 127.878 672.998 150.802 692.824 190.886L729.758 265.564" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M32.3921 54.9928L131.005 40.1391C173.466 33.7434 215.493 54.1012 236.795 91.3845L261.298 134.269C282.353 171.119 323.688 191.478 365.735 185.709L557.1 159.452C601.404 153.373 644.634 176.296 664.459 216.38L701.393 291.058" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M4.0271 80.4872L102.64 65.6335C145.101 59.2378 187.128 79.5956 208.43 116.879L232.933 159.763C253.988 196.613 295.323 216.972 337.37 211.203L528.735 184.946C573.039 178.867 616.269 201.79 636.094 241.875L673.028 316.553" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__content-box">
+                    <h2 class="template-title">Our <span class="gradient-text">Contacts</span></h2>
+                    <h6 class="template-description">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!</h6>
+                    <address class="contacts-contacts">
+                        <div class="contacts-grid">
+                            <div class="contacts-social-icon"><a href="#" class="contacts-social__item">
+                        <img src="./assets/img/icon-instagram.svg" alt="instagram"></a>
+                            </div>
+                            <div class="contacts-social-mail"><a href="mailto:someone@example.com">@supercoffee</a></div>
+                            <div class="contacts-phones-icon">
+                                <img src="./assets/img/icon-phone.svg" alt="phone">
+                            </div>
+                            <div class="contacts-phones-number">
+                                <a href="tel:+420000000000" class="contacts-phones__item">+420 000 000 000</a>
+                            </div>
+                        </div>
+
+                    </address>
+                </div>
+
+
+                <div class="contacts__img-box-bg">
+                    <div class="contacts__img-box">
+                        <div class="contacts__img-box-light"></div>
+                        <div class="accent-label-sm">
+                            <div class="accent-label-image"></div>
+                            <div class="accent-label-shadow"></div>
+                            <span>
+                        we have
+                    </span>
+                        </div>
+                        <img src="./assets/img/contacts.png" alt="contacts">
+                    </div>
+                </div>
+
+                <svg class="decoration__contacts-line" viewBox="0 0 1003 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9412 601.156L192.723 561.68C240.669 551.093 274.679 508.415 274.296 459.315L274.176 443.967C273.766 391.278 312.824 346.606 365.097 339.981L393.638 336.364C417.82 333.299 440.157 321.838 456.749 303.981L487.777 270.588C518.217 237.828 566.191 228.195 606.918 246.664L782.832 326.44C821.484 343.969 866.91 336.252 897.605 306.943L933.328 272.835C964.384 243.181 1010.47 235.663 1049.34 253.91L1139.62 296.288" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M33.851 633.685L212.633 594.209C260.579 583.622 294.589 540.944 294.206 491.844L294.086 476.495C293.675 423.806 332.734 379.135 385.007 372.51L413.548 368.892C437.73 365.828 460.067 354.366 476.659 336.51L507.687 303.116C538.127 270.357 586.101 260.723 626.828 279.193L802.742 358.969C841.394 376.498 886.82 368.781 917.515 339.472L953.237 305.363C984.294 275.71 1030.38 268.192 1069.25 286.439L1159.53 328.817" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M53.7611 666.213L232.543 626.737C280.489 616.151 314.499 573.472 314.116 524.373L313.996 509.024C313.585 456.335 352.644 411.664 404.917 405.039L433.458 401.421C457.64 398.356 479.977 386.895 496.569 369.038L527.597 335.645C558.037 302.885 606.011 293.252 646.738 311.721L822.652 391.498C861.304 409.027 906.73 401.31 937.425 372.001L973.147 337.892C1004.2 308.239 1050.29 300.721 1089.16 318.968L1179.44 361.346" stroke="#D9D9D9" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>
+                <svg class="decoration__contacts-line-mobile" viewBox="0 0 560 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M549.337 255.285L467.184 250.241C445.152 248.888 427.068 232.31 423.809 210.478L422.79 203.654C419.293 180.226 398.828 163.116 375.151 163.824L362.223 164.211C351.27 164.539 340.55 161.009 331.935 154.238L315.823 141.575C300.017 129.152 278.039 128.225 261.243 139.271L188.692 186.985C172.751 197.469 152.039 197.214 136.36 186.342L118.114 173.69C102.251 162.69 81.2587 162.57 65.2712 173.388L28.1409 198.512" stroke="#D9D9D9" stroke-width="0.629372" stroke-linejoin="round" />
+                    <path d="M542.767 271.122L460.614 266.077C438.582 264.724 420.498 248.146 417.239 226.314L416.22 219.49C412.723 196.062 392.258 178.952 368.581 179.66L355.653 180.047C344.7 180.375 333.98 176.845 325.365 170.074L309.253 157.411C293.447 144.988 271.469 144.061 254.673 155.107L182.122 202.821C166.181 213.305 145.469 213.051 129.79 202.178L111.544 189.526C95.6812 178.526 74.6887 178.406 58.7011 189.224L21.5709 214.349" stroke="#D9D9D9" stroke-width="0.629372" stroke-linejoin="round" />
+                    <path d="M536.197 286.958L454.044 281.913C432.012 280.56 413.928 263.982 410.669 242.151L409.65 235.326C406.153 211.898 385.687 194.788 362.011 195.497L349.083 195.884C338.13 196.211 327.41 192.681 318.795 185.91L302.683 173.247C286.877 160.825 264.899 159.897 248.103 170.944L175.552 218.658C159.611 229.141 138.899 228.887 123.22 218.015L104.974 205.362C89.1111 194.362 68.1186 194.242 52.131 205.061L15.0008 230.185" stroke="#D9D9D9" stroke-width="0.629372" stroke-linejoin="round" />
+                </svg>
+
+
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <a href="#" class="footer__logo">
+                <img src="./assets/img/logo.svg" alt="logo">
+            </a>
+                <nav class="footer-nav">
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title">Main</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Buy</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title">We make</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Process</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title">Products</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Cappuccino</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Fast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title">Events</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Drinks</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Eat</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav__column">
+                        <h3 class="footer-nav__title">Contacts</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Instagram</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Number</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="#header" class="btn btn-outline">
+                <svg>
+                    <use href="#icon-arrow"></use>
+                </svg>
+            </a>
+            </div>
+            <address class="footer-contacts">
+                <nav class="footer-phones">
+                    <a href="tel:+420000000000" class="footer-phones__item">+420 000 000 000</a>
+                </nav>
+                <nav class="footer-social">
+                    <a href="#" class="footer-social__item">
+                    <img src="./assets/img/icon-instagram.svg" alt="instagram">
+                </a>
+                </nav>
+            </address>
+        </div>
+    </footer>
+    <svg class="svg-sprite">
+        <symbol id="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 37" fill="none">
+            <path d="M5.25 36.1074C5.25 36.5216 5.58579 36.8574 6 36.8574C6.41421 36.8574 6.75 36.5216 6.75 36.1074L5.25 36.1074ZM6.53033 0.577091C6.23744 0.284199 5.76256 0.284199 5.46967 0.577091L0.6967 5.35006C0.403807 5.64296 0.403807 6.11783 0.6967 6.41072C0.989594 6.70361 1.46447 6.70361 1.75736 6.41072L6 2.16808L10.2426 6.41072C10.5355 6.70362 11.0104 6.70362 11.3033 6.41072C11.5962 6.11783 11.5962 5.64296 11.3033 5.35006L6.53033 0.577091ZM6.75 36.1074L6.75 1.10742L5.25 1.10742L5.25 36.1074L6.75 36.1074Z" fill="url(#paint0_linear_44_125)" />
+            <defs>
+                <linearGradient id="paint0_linear_44_125" x1="6.65407" y1="1.10742" x2="18.2758" y2="7.89991" gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stop-color="#237249" />
+                    <stop offset="1" stop-color="#35C66B" />
+                </linearGradient>
+            </defs>
+        </symbol>
+        <symbol id="icon-triangle" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
+            <path d="M17.3596 11.071C17.6841 11.265 17.6841 11.7352 17.3596 11.9293L2.25661 20.9604C1.92333 21.1597 1.5 20.9196 1.5 20.5313L1.5 2.46899C1.5 2.08067 1.92333 1.84057 2.25661 2.03986L17.3596 11.071Z" stroke="white" stroke-width="3" stroke-miterlimit="1.55572" />
+        </symbol>
+        <symbol id="icon-pause" xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+            <path d="M2 19.8739V4.04094C2 2.92051 2.92032 2.01865 4.04052 2.04135L8.21664 2.12597C9.29759 2.14787 10.1654 3.02486 10.176 4.10598L10.3311 19.94C10.3421 21.0677 9.41911 21.9816 8.29159 21.9592L3.96042 21.8735C2.87149 21.852 2 20.963 2 19.8739Z" stroke="white" stroke-width="3" />
+            <path d="M15.9836 19.8739V4.04094C15.9836 2.92051 16.904 2.01865 18.0242 2.04135L22.2003 2.12597C23.2812 2.14787 24.1491 3.02486 24.1597 4.10598L24.3147 19.94C24.3258 21.0677 23.4028 21.9816 22.2752 21.9592L17.9441 21.8735C16.8551 21.852 15.9836 20.963 15.9836 19.8739Z" stroke="white" stroke-width="3" />
+        </symbol>
+        <symbol id="icon-stop" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M2 20V4C2 2.89543 2.89543 2 4 2H20C21.1046 2 22 2.89543 22 4V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20Z" stroke="white" stroke-width="3" />
+        </symbol>
+    </svg>
+    <div id="process" class="modal video-process">
+        <div class="modal-header">
+            <span class="close" data-modal-close>&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <video src="./assets/img/cappuccino.mp4" id="video" poster="./assets/img/poster-capuccino.jpg" controls>Sorry, your browser doesn't support embedded videos, but don't worry, you can
+                    <a href="./assets/img/cappuccino.mp4">download it</a>
+                    and watch it with your favorite video player!</video>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-footer__btn-nav">
+                <button id="play" class="btn btn-modal-player">
+                    <svg>
+                        <use href="#icon-triangle"></use>
+                    </svg>
+                </button>
+                <button id="pause" class="btn btn-modal-player">
+                    <svg>
+                        <use href="#icon-pause"></use>
+                    </svg>
+                </button>
+                <button id="stop" class="btn btn-modal-player">
+                    <svg>
+                        <use href="#icon-stop"></use>
+                    </svg>
+                </button>
+                <button id="preparation" class="btn btn-modal-nav">preparation</button>
+                <button id="cooking" class="btn btn-modal-nav">cooking</button>
+                <button id="enjoyment" class="btn btn-modal-nav">enjoyment</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedback" class="modal feedback-field">
+        <div class="modal-header">
+            <span class="close" data-modal-close>&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                <form action="" autocomplete="off">
+                    <fieldset>
+                        <div class="input-row">
+                            <div class="input-description">
+                                <label for="fname">Name:</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="fname" placeholder="&nbsp;Vincenco Napoli" type="text">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-description">
+                                <label for="phone">Tel.:</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="tel" name="" id="phone" placeholder="&nbsp;+421 000 000 000">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-description">
+                                <label for="email">E-mail:</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" name="email" id="email" placeholder="&nbsp;example@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-description">
+                                <label for="country">Country:</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="country" placeholder="&nbsp;Italy" type="text">
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-description">
+                                <label for="message">Text:</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea name="message" rows="5" cols="24" placeholder="Your message..."></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-modal-nav">
+                <div class="modal-footer__btn-nav">
+
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
+<div id="process" class="modal video-process">
+    <div class="modal-header">
+        <span class="close" data-modal-close>&times;</span>
+    </div>
+    <div class="modal-body">
+        <div class="modal-content">
+            <video src="./assets/img/cappuccino.mp4" id="video" poster="./assets/img/poster-capuccino.jpg" controls>Sorry, your browser doesn't support embedded videos, but don't worry, you can
+                <a href="./assets/img/cappuccino.mp4">download it</a>
+                and watch it with your favorite video player!</video>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="modal-footer__btn-nav">
+            <button id="play" class="btn btn-modal-player">
+                <svg>
+                    <use href="#icon-triangle"></use>
+                </svg>
+            </button>
+            <button id="pause" class="btn btn-modal-player">
+                <svg>
+                    <use href="#icon-pause"></use>
+                </svg>
+            </button>
+            <button id="stop" class="btn btn-modal-player">
+                <svg>
+                    <use href="#icon-stop"></use>
+                </svg>
+            </button>
+            <button id="preparation" class="btn btn-modal-nav">preparation</button>
+            <button id="cooking" class="btn btn-modal-nav">cooking</button>
+            <button id="enjoyment" class="btn btn-modal-nav">enjoyment</button>
+        </div>
+    </div>
+</div>
+
+<div id="feedback" class="modal feedback-field">
+    <div class="modal-header">
+        <span class="close" data-modal-close>&times;</span>
+    </div>
+    <div class="modal-body">
+        <div class="modal-content">
+            <form action="" autocomplete="off">
+                <fieldset>
+                    <div class="input-row">
+                        <div class="input-description">
+                            <label for="fname">Name:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="fname" placeholder="&nbsp;Vincenco Napoli" type="text">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-description">
+                            <label for="phone">Tel.:</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="tel" name="" id="phone" placeholder="&nbsp;+421 000 000 000">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-description">
+                            <label for="email">E-mail:</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email" placeholder="&nbsp;example@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-description">
+                            <label for="country">Country:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="country" placeholder="&nbsp;Italy" type="text">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-description">
+                            <label for="message">Text:</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea name="message" rows="5" cols="24" placeholder="Your message..."></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="btn-modal-nav">
+            <div class="modal-footer__btn-nav">
+
+                <button class="btn btn-secondary" type="reset">Reset</button>
+                <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+
+            </div>
+        </div>
+    </div>
+</div>
