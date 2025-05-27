@@ -1,0 +1,35 @@
+@media screen and (max-width: 1233.99px) {
+    .carousel-wrapper {
+        .swiper-product {
+            max-width: 603px;
+        }
+    }
+    
+    .swiper-navigation {
+        max-width: 842px;
+    }
+}
+
+
+
+@media screen and (max-width: 1199.99px) {
+   
+    .accent-label-sm {
+        left: -10px;
+    }
+
+    .we-make__line {
+        bottom: -60%;
+    }
+
+    .events-line {
+        display: none;
+    }
+    
+    
+    .footer-nav {
+        max-width: 650px;
+    }
+}
+
+

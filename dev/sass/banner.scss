@@ -1,0 +1,122 @@
+.banner {
+    position: relative;
+   
+    
+    .container {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__content {
+        max-width: 580px;
+    }
+
+    .template-title {
+        margin-bottom: 54px;
+
+      
+    }
+
+
+    &-btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 54px;
+        position: relative;
+
+        &::before {
+            @include template-light;
+            width: 603px;
+            height: 603px;
+            left: 73%;
+            top: 100%;
+            background: url(./assets/img/decoration__banner-light-btn-row.png) center no-repeat;
+        }
+
+        &::after {
+            @include template-light;
+            left: 40%;
+            top: -200%;
+            width: 586px;
+            height: 653px;
+            background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
+        }
+    }
+
+    &-statistic__title {
+        font-size: 62px;
+    }
+
+    &-statistic__subtitle {
+        font-size: 20px;
+    }
+
+    &-statistics {
+       display: flex;
+       gap: 46px;
+    }
+
+    &-statistic-item {
+        width: 126px;
+    }
+
+    .banner-img {
+        margin-right: 43px;
+        position: relative;
+
+        .accent-label {
+            --max-size: 166px;
+            --size: 12.769vw;
+            width: var(--size);
+            height: var(--size);
+            max-width: var(--max-size);
+            max-height: var(--max-size);
+            top: 0;
+            right: 38px;
+            font-size: Min(4.231vw, 55px);
+            font-weight: 500;
+            transform: rotate(-15deg);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 130px;
+            bottom: 225px;
+            width: 479px;
+            height: 479px;
+            background: url(./assets/img/decoration__banner-light-img.png) center no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -170px;
+            bottom: -170px;
+            width: 676px;
+            height: 676px;
+            background: url(./assets/img/decoration__banner-light-img-md.png) center no-repeat;
+            z-index: -1;
+        }
+    }
+
+    .banner-line {
+        width: 1472px;
+        height: 670px;
+        position: absolute;
+        top: 196px;
+        right: -857px;
+        z-index: -1;
+    }
+
+    .template-description {
+        max-width: 580px;
+    }
+}
+
+
+
+

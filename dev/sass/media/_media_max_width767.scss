@@ -1,0 +1,24 @@
+@media screen and (max-width: 767.99px) {
+    .banner {
+        .banner-img::after {
+            right: -135px;
+            bottom: -192px;
+        }
+
+         .banner-line {
+            width: 160%;
+            left: 6vw;
+            bottom: -30vw;
+        }
+    }
+
+    .carousel-wrapper {
+        .swiper-product {
+            max-width: 402px;
+        }
+    }
+    
+    .swiper-navigation {
+        max-width: 544px;
+    }
+}
