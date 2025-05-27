@@ -1,10 +1,15 @@
 const burger = document.querySelector('#btn-burger')
 const mobileContainer = document.querySelector('#mobile-container')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
 burger.addEventListener('click', ()=> {
     burger.classList.toggle('active')
     mobileContainer.classList.toggle('show')
 })
 
+<<<<<<< HEAD
 /* modal */
 
 const modalTrigers = document.querySelectorAll('[data-triger-modal]');
@@ -220,3 +225,10 @@ const swiperProduct = new Swiper('.swiper-product', {
 //    console.log ('viac')
 //}
 
+=======
+const btnTriggerProcess = document.querySelector('[data-triger-modal="proccess"]');
+
+function ShowOverlay() {
+    alert('Hello eorldf');
+}
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24

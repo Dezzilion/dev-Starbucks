@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and (max-width: 1024.99px) {
     header {
         padding: 29px 0;
@@ -190,11 +191,40 @@
             margin-bottom: 28px;
         }
 
+=======
+
+@media screen and (max-width: 1024px) {
+    header {
+        position: relative;
+        .mobile-container {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 98px;
+            width: 100%;
+            padding: 25px 25px 75px;
+            background-color: rgba(18, 21, 23, 0.3);
+            background-image:  linear-gradient(245deg, rgba(35, 114, 73, 0.6) 0%, rgba(53, 198, 107, 0.6) 100%);
+            transform: translate(0, -100%);
+            transition: 2.3s;
+            visibility: hidden;
+            &.show {
+                display: block;
+                transform: translate(0, 0);
+                visibility: visible;
+            }
+            ul {
+                flex-direction: column;   
+            }
+        }
+    }
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
     .banner {
         .container {
             flex-direction: column-reverse;
             align-items: center;
         }
+<<<<<<< HEAD
 
         .template-title {
             margin-bottom: 36px;
@@ -636,6 +666,23 @@
             margin-top: -17px;
         }
     }
+=======
+        &__title {
+            font-size: 48px!important;
+        }
+        &__subtitle {
+            font-size: 12px!important;
+        }
+        &__img {
+            width: 271px!important;
+            height: 381px!important;
+            &::after {
+                width: 400px!important;
+                height: 292px!important;
+            }
+        }
+    }
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
 }
 
 

@@ -1,0 +1,102 @@
+@use "variables" as v;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: v.$font-primary;
+    font-size: v.$primary-size;
+    background-color: v.$bg-color;
+    color: v.$text;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: v.$title-color;
+    /* line-height: 1.4; */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.375rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+a {
+    &:hover {
+        color: v.$secondary-color;
+    }
+}
+
+.container {
+    max-width: 1274px;
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    &.btn-outline {
+        width: 84px;
+        height: 84px;
+        border: 1px solid v.$primary-color;
+        border-radius: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            height: 37px;
+        }
+    }
+}
+
+.svg-sprite {
+    height: 0;
+}
+::selection {
+    color: v.$bg-color;
+    background-color: v.$primary-color;
+}
+

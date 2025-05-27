@@ -59,7 +59,11 @@ gulp.task('html', function() {
 // ЗАДАЧА: Копирование изображений
 gulp.task('img', function () {
     return gulp.src([
+<<<<<<< HEAD
         dirs.source + '/assets/img/*.{gif,png,jpg,jpeg,svg,mp4}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+=======
+        dirs.source + '/assets/img/*.{gif,png,jpg,jpeg,svg}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
     ],
         {since: gulp.lastRun('img')} // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
     )
@@ -71,7 +75,11 @@ gulp.task('img', function () {
 // ЗАДАЧА: Копирование изображений
 gulp.task('images', function () {
     return gulp.src([
+<<<<<<< HEAD
         dirs.source + '/assets/images/*.{gif,png,jpg,jpeg,svg,mp4}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+=======
+        dirs.source + '/assets/images/*.{gif,png,jpg,jpeg,svg}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
     ],
         {since: gulp.lastRun('img')} // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
     )
@@ -83,8 +91,13 @@ gulp.task('images', function () {
 // ЗАДАЧА: Копирование изображений
 gulp.task('imguploads', function () {
     return gulp.src([
+<<<<<<< HEAD
         dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg,mp4}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
         dirs.source + '/uploads/**/*.{gif,png,jpg,jpeg,svg,mp4}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+=======
+        dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+        dirs.source + '/uploads/**/*.{gif,png,jpg,jpeg,svg}', // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
     ],
         {since: gulp.lastRun('img')} // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
     )
@@ -242,7 +255,11 @@ gulp.task('serve', gulp.series('build', function() {
         gulp.series('svgstore', 'html', reloader)
     );
     gulp.watch( // следим за изображениями
+<<<<<<< HEAD
         dirs.source + '/assets/img/*.{gif,png,jpg,jpeg,svg,mp4}',
+=======
+        dirs.source + '/assets/img/*.{gif,png,jpg,jpeg,svg}',
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
         gulp.series('img', reloader) // при изменении оптимизируем, копируем и обновляем в браузере
     );
     
@@ -251,14 +268,23 @@ gulp.task('serve', gulp.series('build', function() {
         gulp.series('svgstore', 'html', reloader)
     );
     gulp.watch( // следим за изображениями
+<<<<<<< HEAD
         dirs.source + '/assets/images/*.{gif,png,jpg,jpeg,svg,mp4}',
+=======
+        dirs.source + '/assets/images/*.{gif,png,jpg,jpeg,svg}',
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
         gulp.series('img', reloader) // при изменении оптимизируем, копируем и обновляем в браузере
     );
     
     gulp.watch( // следим за изображениями
         [
+<<<<<<< HEAD
             dirs.source + '/uploads/**/*.{gif,png,jpg,jpeg,svg,mp4}',
             dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg,mp4}',
+=======
+            dirs.source + '/uploads/**/*.{gif,png,jpg,jpeg,svg}',
+            dirs.source + '/uploads/*.{gif,png,jpg,jpeg,svg}',
+>>>>>>> 2999f0856ed8515a37fc827730b8919c02ceeb24
         ],
         gulp.series('imguploads', reloader) // при изменении оптимизируем, копируем и обновляем в браузере
     );
